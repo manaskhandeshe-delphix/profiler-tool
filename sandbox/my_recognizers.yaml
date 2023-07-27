@@ -1,0 +1,18 @@
+recognizers:
+  -
+    name: "FIRST_NAME"
+    supported_language: "en"
+    patterns:
+      -
+         name: "FIRST_NAME 1"
+         regex: "(?i)(?>(mid(dle)?_?-? ?(na?me?))(_?-?user)?)$"
+         score: 0.01
+      -
+         name: "FIRST_NAME 2"
+         regex: "(?i)(?>(f(irst)?_?-? ?(na?me?))(_?-?user)?)$"
+         score: 0.01
+      -
+         name: "FIRST_NAME 3"
+         regex: "(firstName)"
+         score: 0.01
+    supported_entity: "FIRST_NAME"

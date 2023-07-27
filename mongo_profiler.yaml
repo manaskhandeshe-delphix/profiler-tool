@@ -1,0 +1,3 @@
+mongodb_uri: "mongodb://puneadmin:DELPHIX%40%27123%22@mkk-punedb01.dcol1.delphix.com:50001/admin?ReplicaSet=rs509"
+database: "sample_training"
+collection: "companies"
