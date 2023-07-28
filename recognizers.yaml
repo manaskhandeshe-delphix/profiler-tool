@@ -1,0 +1,48 @@
+recognizers:
+  -
+    name: "FIRST_NAME"
+    supported_language: "en"
+    patterns:
+      -
+         name: "FIRST_NAME 1"
+         regex: "(?i)(?>(mid(dle)?_?-? ?(na?me?))(_?-?user)?)$"
+         score: 0.01
+      -
+         name: "FIRST_NAME 2"
+         regex: "(?i)(?>(f(irst)?_?-? ?(na?me?))(_?-?user)?)$"
+         score: 0.01
+      -
+         name: "FIRST_NAME 3"
+         regex: "(firstName)"
+         score: 0.01
+      -
+         name: "FIRST_NAME 4"
+         regex: "(first_name)"
+         score: 0.01
+      -
+         name: "FIRST_NAME 5"
+         regex: "(name)"
+         score: 0.01
+    supported_entity: "FIRST_NAME"
+  -
+    name: "LAST_NAME"
+    supported_language: "en"
+    patterns:
+      -
+         name: "LAST_NAME 1"
+         regex: "(?i)(?>((l(as)?t)_?-? ?(na?me?))(_?-?user)?)$"
+         score: 0.01
+      -
+         name: "LAST_NAME 2"
+         regex: "(?i)(?>(sur) ?_?-? ?(name)?_?-? ?(no|id|str|value|))"
+         score: 0.01
+    supported_entity: "LAST_NAME"
+  -
+    name: "ZIP"
+    supported_language: "en"
+    patterns:
+      -
+         name: "ZIP 1"
+         regex: "(?i)(?>(zip|post|postal)_?-? ?(co?de?)|(zip))"
+         score: 0.01
+    supported_entity: "ZIP"

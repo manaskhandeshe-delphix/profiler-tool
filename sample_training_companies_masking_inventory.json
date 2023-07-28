@@ -1,0 +1,37 @@
+[
+    {
+        "field_name": "$[*]['name']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['twitter_username']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['relationships'][*]['person']['first_name']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['relationships'][*]['person']['last_name']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['offices'][*]['zip_code']\n",
+        "domain_name": "ZIP",
+        "algorithm_name": "USstatecodesLookup"
+    },
+    {
+        "field_name": "$[*]['funding_rounds'][*]['investments'][*]['company']['name']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['milestones'][*]['stoneable']['name']\n",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    }
+]
