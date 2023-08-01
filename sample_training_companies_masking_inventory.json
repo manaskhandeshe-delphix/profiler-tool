@@ -1,36 +1,61 @@
 [
     {
-        "field_name": "$[*]['name']\n",
+        "field_name": "$[*]['name']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     },
     {
-        "field_name": "$[*]['twitter_username']\n",
+        "field_name": "$[*]['twitter_username']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     },
     {
-        "field_name": "$[*]['relationships'][*]['person']['first_name']\n",
+        "field_name": "$[*]['relationships'][*]['person']['first_name']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     },
     {
-        "field_name": "$[*]['relationships'][*]['person']['last_name']\n",
+        "field_name": "$[*]['relationships'][*]['person']['last_name']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     },
     {
-        "field_name": "$[*]['offices'][*]['zip_code']\n",
+        "field_name": "$[*]['acquisitions'][*]['company']['name']",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['offices'][*]['zip_code']",
         "domain_name": "ZIP",
         "algorithm_name": "USstatecodesLookup"
     },
     {
-        "field_name": "$[*]['funding_rounds'][*]['investments'][*]['company']['name']\n",
+        "field_name": "$[*]['competitions'][*]['competitor']['name']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     },
     {
-        "field_name": "$[*]['milestones'][*]['stoneable']['name']\n",
+        "field_name": "$[*]['acquisition']['acquiring_company']['name']",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['milestones'][*]['stoneable']['name']",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['products'][*]['name']",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['funding_rounds'][*]['investments'][*]['person']['first_name']",
+        "domain_name": "FIRST_NAME",
+        "algorithm_name": "dlpx-core:FirstName"
+    },
+    {
+        "field_name": "$[*]['funding_rounds'][*]['investments'][*]['person']['last_name']",
         "domain_name": "FIRST_NAME",
         "algorithm_name": "dlpx-core:FirstName"
     }

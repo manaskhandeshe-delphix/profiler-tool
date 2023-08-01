@@ -16,8 +16,8 @@ from presidio_analyzer import AnalyzerEngine, RecognizerRegistry
 
 class Globals:
     PROF_CONF_PATH = 'mongo_profiler.yaml'
-    JSONPATHS_FILE_PATH = f"{{db_name}}_{{collection}}_meta.jsonpath"
-    FMT_FILE_PATH = f"{{db_name}}_{{collection}}_meta.fmt"
+    JSONPATHS_FILE_PATH = f"{{db_name}}_{{collection}}_meta_jsonpath.txt"
+    FMT_FILE_PATH = f"{{db_name}}_{{collection}}_meta_fmt.json"
     MASKING_INVENTORY_FILE_PATH = f"{{db_name}}_{{collection}}_masking_inventory.json"
     RECOGNIZER_PATH = 'recognizers.yaml'
     ALGORITHMS_MAPPING = {
@@ -160,7 +160,7 @@ def profile_and_create_masking_inventory(
                     if result.entity_type:
                         # write to inventory
                         masking_inventory_list.append({
-                            "field_name": jsonpath_text,
+                            "field_name": jsonpath_text.strip(),
                             "domain_name": result.entity_type,
                             "algorithm_name": Globals.ALGORITHMS_MAPPING[result.entity_type]
                         })

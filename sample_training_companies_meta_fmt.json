@@ -45,7 +45,36 @@
             }
         ],
         "total_money_raised": "",
-        "acquisition": "",
+        "acquisition": {
+            "price_amount": "",
+            "price_currency_code": "",
+            "term_code": "",
+            "source_url": "",
+            "source_description": "",
+            "acquired_year": "",
+            "acquired_month": "",
+            "acquired_day": "",
+            "acquiring_company": {
+                "name": "",
+                "permalink": ""
+            }
+        },
+        "acquisitions": [
+            {
+                "price_amount": "",
+                "price_currency_code": "",
+                "term_code": "",
+                "source_url": "",
+                "source_description": "",
+                "acquired_year": "",
+                "acquired_month": "",
+                "acquired_day": "",
+                "company": {
+                    "name": "",
+                    "permalink": ""
+                }
+            }
+        ],
         "offices": [
             {
                 "description": "",
@@ -70,27 +99,12 @@
                 "attribution": ""
             }
         ],
-        "funding_rounds": [
+        "competitions": [
             {
-                "id": "",
-                "round_code": "",
-                "source_url": "",
-                "source_description": "",
-                "raised_amount": "",
-                "raised_currency_code": "",
-                "funded_year": "",
-                "funded_month": "",
-                "funded_day": "",
-                "investments": [
-                    {
-                        "company": {
-                            "name": "",
-                            "permalink": ""
-                        },
-                        "financial_org": "",
-                        "person": ""
-                    }
-                ]
+                "competitor": {
+                    "name": "",
+                    "permalink": ""
+                }
             }
         ],
         "milestones": [
@@ -113,16 +127,34 @@
                 }
             }
         ],
-        "video_embeds": [
+        "products": [
             {
-                "embed_code": "",
-                "description": ""
+                "name": "",
+                "permalink": ""
             }
         ],
-        "external_links": [
+        "funding_rounds": [
             {
-                "external_url": "",
-                "title": ""
+                "id": "",
+                "round_code": "",
+                "source_url": "",
+                "source_description": "",
+                "raised_amount": "",
+                "raised_currency_code": "",
+                "funded_year": "",
+                "funded_month": "",
+                "funded_day": "",
+                "investments": [
+                    {
+                        "company": "",
+                        "financial_org": "",
+                        "person": {
+                            "first_name": "",
+                            "last_name": "",
+                            "permalink": ""
+                        }
+                    }
+                ]
             }
         ]
     }
