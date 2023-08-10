@@ -22,5 +22,6 @@ registry.add_recognizers_from_yaml(yaml_file)
 
 analyzer = AnalyzerEngine(registry=registry)
 results = analyzer.analyze(text=original_data, language="en")
+print("Detecting following sensitive information.")
 for result in results:
     print(f"- {original_data[result.start:result.end]} as {result.entity_type}")
